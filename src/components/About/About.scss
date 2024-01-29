@@ -1,0 +1,36 @@
+.about {
+    max-width: 350px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+}
+
+.about__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.contacts__img {
+    height: 30px;
+    width: 30px;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+        opacity: .6;
+    }
+}
