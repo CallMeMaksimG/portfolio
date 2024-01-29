@@ -1,4 +1,5 @@
 import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
     return (
@@ -7,7 +8,7 @@ function App() {
                 <div className="container">
                     <div className="wrapper">
                         <About />
-                        <div className="projects">ПРОЕКТЫ</div>
+                        <Projects></Projects>
                     </div>
                 </div>
             </main>
