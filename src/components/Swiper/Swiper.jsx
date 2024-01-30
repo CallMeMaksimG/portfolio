@@ -10,6 +10,7 @@ const Slider = ({ slides }) => {
         <>
             <Swiper
                 navigation={true}
+                rewind={true}
                 modules={[Navigation]}
                 className="mySwiper"
             >
