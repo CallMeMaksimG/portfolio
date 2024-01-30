@@ -3,6 +3,13 @@
     height: 100%;
     position: static;
     z-index: 1;
+    background-color: black;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
 }
 
 .swiper-button-prev {

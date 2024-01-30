@@ -14,8 +14,8 @@ const Slider = ({ slides }) => {
                 modules={[Navigation]}
                 className="mySwiper"
             >
-                {slides.map((slide) => (
-                    <SwiperSlide>
+                {slides?.map((slide, i) => (
+                    <SwiperSlide key={i}>
                         <img src={slide} alt="" />
                     </SwiperSlide>
                 ))}
