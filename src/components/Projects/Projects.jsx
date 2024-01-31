@@ -14,7 +14,6 @@ const Projects = () => {
     }, []);
     return (
         <div className="projects">
-            {/* <Project projects={projects}></Project> */}
             {projects?.length > 0 &&
                 projects.map((project) => {
                     return <Project key={project.id} project={project}></Project>;

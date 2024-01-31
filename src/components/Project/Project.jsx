@@ -3,7 +3,7 @@ import Slider from '../Swiper/Swiper';
 import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
-    console.log(project)
+    console.log(project);
     const photo = [
         './../img/projects/lendings/RumTibet.jpg',
         './../img/projects/lendings/PantoFurniture.jpg',
@@ -15,7 +15,11 @@ const Project = ({ project }) => {
         <div className="project">
             <div className="project__info">
                 {project.title.isLink ? (
-                    <Link>
+                    <Link
+                        className="project__title-link"
+                        to={project.title.link}
+                        target="_blank"
+                    >
                         <h2 className="project__title">
                             {project.title.title}
                         </h2>
@@ -24,7 +28,23 @@ const Project = ({ project }) => {
                     <h2 className="project__title">{project.title.title}</h2>
                 )}
 
-                <p className="project__description">{project.description}</p>
+                <div
+                    className="project__description"
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                ></div>
+                <div className="project__links">
+                    <h3>
+                        {project.links.length === 1 ? 'Проект ' : 'Проекты '}{' '}
+                        на GitHub:
+                    </h3>
+                    <ul>
+                        {project.links.map((link) => (
+                            <Link className='project__links-link' to={link.github}>
+                                <li>{link.title}</li>
+                            </Link>
+                        ))}
+                    </ul>
+                </div>
                 <div className="project__technologies">
                     <h3 className="project__technologies-title">
                         Используемые технологии:
