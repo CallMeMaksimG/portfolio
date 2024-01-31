@@ -33,15 +33,39 @@ const Project = ({ project }) => {
                     dangerouslySetInnerHTML={{ __html: project.description }}
                 ></div>
                 <div className="project__links">
+                    <h3>Ссылки на проекты:</h3>
+                    <ul>
+                        {project.links.map(
+                            (l) =>
+                                l.link && (
+                                    <li>
+                                        <Link
+                                            className="project__links-link"
+                                            to={l.link}
+                                        >
+                                            {l.title}
+                                        </Link>
+                                    </li>
+                                )
+                        )}
+                    </ul>
+                </div>
+
+                <div className="project__links-github">
                     <h3>
-                        {project.links.length === 1 ? 'Проект ' : 'Проекты '}{' '}
-                        на GitHub:
+                        {project.links.length === 1 ? 'Проект ' : 'Проекты '} на
+                        GitHub:
                     </h3>
                     <ul>
                         {project.links.map((link) => (
-                            <Link className='project__links-link' to={link.github}>
-                                <li>{link.title}</li>
-                            </Link>
+                            <li>
+                                <Link
+                                    className="project__links-link"
+                                    to={link.github}
+                                >
+                                    {link.title}
+                                </Link>
+                            </li>
                         ))}
                     </ul>
                 </div>

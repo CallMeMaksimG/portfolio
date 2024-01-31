@@ -30,7 +30,7 @@
                 },
                 {
                     "title":"Panto Furniture",
-                    "link": "ДОБАВИТЬ!!!!!!!!!!!!!",
+                    "link": "https://callmemaksimg.github.io/panto-furniture",
                     "github": "https://github.com/CallMeMaksimG/panto-furniture"
                 }
             ],
@@ -95,6 +95,17 @@
             },
             "description": "<p>Интернет-магазин аудиотехники с разделом блог.</p> <p>Дизайн и приложение разработано в рамках дипломного проекта университета ИТМО.</p> <h3>Функционал:</h3> <ul><li>Добавление товара в корзину;</li> <li>Добавление товара в избранное;</li> <li>Оформление заказа.</li></ul> <p>Приложение адаптированно под мобильные утройства.</p>",
             "technologies": [ "HTML5", "CSS3", "JavaScript", "jQuery" ],
+            "img": [
+                "./../img/projects/AudioEden/AudioEden-1.jpg", 
+                "./../img/projects/AudioEden/AudioEden-2.jpg",
+                "./../img/projects/AudioEden/AudioEden-3.jpg",
+                "./../img/projects/AudioEden/AudioEden-4.jpg",
+                "./../img/projects/AudioEden/AudioEden-5.jpg",
+                "./../img/projects/AudioEden/AudioEden-6.jpg",
+                "./../img/projects/AudioEden/AudioEden-7.jpg",
+                "./../img/projects/AudioEden/AudioEden-8.jpg"
+             
+            ],
             "links": [
                 {
                     "title": "Audio Eden Shop",
