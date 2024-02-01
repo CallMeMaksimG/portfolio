@@ -10,27 +10,44 @@
             "links": [
                 {
                     "title":"Lease-cars",
-                    "link": "https://callmemaksimg.github.io/Lease-cars/",
+                    "link": "https://callmemaksimg.github.io/Lease-cars/"
+                },
+                {
+                    "title":"INK.HOUSE",
+                    "link": "https://callmemaksimg.github.io/Ink.House/"
+                },
+                {
+                    "title":"Loft Studio",
+                    "link": "https://callmemaksimg.github.io/LoftStudio"
+                },
+                {
+                    "title":"RumTibet",
+                    "link": "https://callmemaksimg.github.io/RumTibet"
+                },
+                {
+                    "title":"Panto Furniture",
+                    "link": "https://callmemaksimg.github.io/panto-furniture"
+                }
+            ],
+            "linksGitHub": [
+                {
+                    "title":"Lease-cars",
                     "github": "https://github.com/CallMeMaksimG/Lease-cars"
                 },
                 {
                     "title":"INK.HOUSE",
-                    "link": "https://callmemaksimg.github.io/Ink.House/",
                     "github": "https://github.com/CallMeMaksimG/Ink.House"
                 },
                 {
                     "title":"Loft Studio",
-                    "link": "https://callmemaksimg.github.io/LoftStudio",
                     "github": "https://github.com/CallMeMaksimG/LoftStudio"
                 },
                 {
                     "title":"RumTibet",
-                    "link": "https://callmemaksimg.github.io/RumTibet",
                     "github": "https://github.com/CallMeMaksimG/RumTibet"
                 },
                 {
                     "title":"Panto Furniture",
-                    "link": "https://callmemaksimg.github.io/panto-furniture",
                     "github": "https://github.com/CallMeMaksimG/panto-furniture"
                 }
             ],
@@ -57,7 +74,7 @@
                 "./../img/projects/ToDo/Todo 2.jpg",
                 "./../img/projects/ToDo/Todo.gif"
             ],
-            "links": [
+            "linksGitHub": [
                 {
                     "title": "ToDo List",
                     "github": "https://github.com/CallMeMaksimG/Todo"
@@ -79,7 +96,7 @@
                 "./../img/projects/Counter/Считалочка 3.jpg",
                 "./../img/projects/Counter/Считалочка.gif"
             ],
-            "links": [
+            "linksGitHub": [
                 {
                     "title": "ToDo List",
                     "github": "https://github.com/CallMeMaksimG/game-for-kids"
@@ -106,7 +123,7 @@
                 "./../img/projects/AudioEden/AudioEden-8.jpg"
              
             ],
-            "links": [
+            "linksGitHub": [
                 {
                     "title": "Audio Eden Shop",
                     "github": "https://github.com/CallMeMaksimG/project-shop"
@@ -129,7 +146,7 @@
                 "./../img/projects/SneakerShop/Sneakershop-mobile.jpg",
                 "./../img/projects/SneakerShop/Sneakershop.gif"
             ],
-            "links": [
+            "linksGitHub": [
                 {
                     "title": "SNEAKERSHOP",
                     "github": "https://github.com/CallMeMaksimG/Sneakers-shop"

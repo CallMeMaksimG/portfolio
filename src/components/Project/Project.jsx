@@ -32,33 +32,37 @@ const Project = ({ project }) => {
                     className="project__description"
                     dangerouslySetInnerHTML={{ __html: project.description }}
                 ></div>
-                <div className="project__links">
-                    <h3>Ссылки на проекты:</h3>
-                    <ul>
-                        {project.links.map(
-                            (l) =>
-                                l.link && (
-                                    <li>
-                                        <Link
-                                            className="project__links-link"
-                                            to={l.link}
-                                        >
-                                            {l.title}
-                                        </Link>
-                                    </li>
-                                )
-                        )}
-                    </ul>
-                </div>
+                {project.links && (
+                    <div className="project__links">
+                        <h3>Ссылки на проекты:</h3>
+                        <ul>
+                            {project.links.map(
+                                (l) =>
+                                    l.link && (
+                                        <li key={l.title}>
+                                            <Link
+                                                className="project__links-link"
+                                                to={l.link}
+                                            >
+                                                {l.title}
+                                            </Link>
+                                        </li>
+                                    )
+                            )}
+                        </ul>
+                    </div>
+                )}
 
                 <div className="project__links-github">
                     <h3>
-                        {project.links.length === 1 ? 'Проект ' : 'Проекты '} на
-                        GitHub:
+                        {project.linksGitHub && project.linksGitHub.length === 1
+                            ? 'Проект '
+                            : 'Проекты '}{' '}
+                        на GitHub:
                     </h3>
                     <ul>
-                        {project.links.map((link) => (
-                            <li>
+                        {project.linksGitHub.map((link) => (
+                            <li key={link.title}>
                                 <Link
                                     className="project__links-link"
                                     to={link.github}
@@ -74,8 +78,11 @@ const Project = ({ project }) => {
                         Используемые технологии:
                     </h3>
                     <ul className="project__technologies-list">
-                        {project.technologies.map((tech) => (
-                            <li className="project__technologies-list-item">
+                        {project.technologies.map((tech, i) => (
+                            <li
+                                key={i}
+                                className="project__technologies-list-item"
+                            >
                                 {tech}
                             </li>
                         ))}
