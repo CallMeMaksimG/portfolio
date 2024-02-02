@@ -3,14 +3,6 @@ import Slider from '../Swiper/Swiper';
 import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
-    console.log(project);
-    const photo = [
-        './../img/projects/lendings/RumTibet.jpg',
-        './../img/projects/lendings/PantoFurniture.jpg',
-        './../img/projects/lendings/InkHouse.jpg',
-        './../img/projects/lendings/LeaseCars.jpg',
-        './../img/projects/lendings/LoftHouse.jpg',
-    ];
     return (
         <div className="project">
             <div className="project__info">

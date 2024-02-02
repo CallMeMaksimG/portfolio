@@ -11,7 +11,6 @@ const Projects = () => {
                 'https://maksimgolovanovfrontend.ru/projects.json'
             );
             const data = await response.json();
-            console.log(data)
             setProjects(data);
         };
         fetchData();

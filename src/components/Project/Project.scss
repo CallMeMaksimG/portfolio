@@ -2,10 +2,19 @@
     display: flex;
     gap: 40px;
     position: relative;
+
+    @media (max-width: 1220px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
 }
 
 .project__info {
-    max-width: 30%;
+    width: 30%;
+
+    @media (max-width: 1220px) {
+        width: 100%;
+    }
 }
 
 .project__title {
@@ -77,6 +86,10 @@
 
 .project__images {
     max-width: 70%;
+
+    @media (max-width: 1220px) {
+        max-width: 100%;
+    }
 }
 
 .project__links,
