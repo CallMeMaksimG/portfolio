@@ -5,11 +5,13 @@ import { useEffect, useState } from 'react';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     const projectsSort = projects.sort((a, b) => b.id - a.id);
-    console.log(projectsSort)
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:3000/projects');
+            const response = await fetch(
+                'https://maksimgolovanovfrontend.ru/projects.json'
+            );
             const data = await response.json();
+            console.log(data)
             setProjects(data);
         };
         fetchData();
