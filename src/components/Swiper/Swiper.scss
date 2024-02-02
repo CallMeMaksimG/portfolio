@@ -1,7 +1,7 @@
 .swiper {
     max-width: 800px;
-    height: 100%;
-    position: static;
+    max-height: 600px;
+    position: relative;
     z-index: 1;
     background-color: black;
 }
@@ -9,6 +9,7 @@
 .swiper-slide {
     display: flex;
     align-items: center;
+    height: auto;
 }
 
 .swiper-button-prev {
@@ -19,7 +20,7 @@
     position: absolute;
     z-index: 10;
     top: 50%;
-    transform: translate(-25px, -50%);
+    transform: translate(5px, -50%);
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
@@ -44,7 +45,7 @@
     position: absolute;
     z-index: 999;
     top: 50%;
-    transform: translate(25px, -50%);
+    transform: translate(-5px, -50%);
     box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
     right: 0;
     border-radius: 50%;
@@ -62,5 +63,31 @@
 
     &:hover {
         background-color: darken(#fff, 10%);
+    }
+}
+
+.video {
+    position: relative;
+}
+
+.video__btn {
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+    transition: background .2s ease-in-out;
+    &:hover {
+        background-color: darken(#fff, 10%);
+    }
+
+    &-hidden {
+        opacity: 0;
+        overflow: hidden;
     }
 }

@@ -4,19 +4,23 @@ import { useEffect, useState } from 'react';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const projectsSort = projects.sort((a, b) => b.id - a.id);
+    console.log(projectsSort)
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:3000/projects')
-            const data = await response.json()
-            setProjects(data)
+            const response = await fetch('http://localhost:3000/projects');
+            const data = await response.json();
+            setProjects(data);
         };
         fetchData();
     }, []);
     return (
         <div className="projects">
-            {projects?.length > 0 &&
-                projects.map((project) => {
-                    return <Project key={project.id} project={project}></Project>;
+            {projectsSort?.length > 0 &&
+                projectsSort.map((project) => {
+                    return (
+                        <Project key={project.id} project={project}></Project>
+                    );
                 })}
         </div>
     );
